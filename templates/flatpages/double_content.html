@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block title %} {{ flatpage.title }} {% endblock %}
+
+{% block header %}{{ flatpage.title }}{% endblock %}
+
+{% block content %}
+    <div class="mb-3 font-weight-bold text-primary">
+        <h1>{{ flatpage.title }}</h1>
+    </div>
+    <hr/>
+    <div class="font-italic text-primary">
+        <p>{{ flatpage.content }} {{ flatpage.content }}</p>
+    </div>
+
+    {% include 'flatpages/footer.html' %}
+{% endblock %}
